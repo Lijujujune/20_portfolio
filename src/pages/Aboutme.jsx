@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Box, Image, Text, Heading, VStack } from '@chakra-ui/react';
-import dogProfile from './assets/dogprofile.png'; // Ensure the path is correct
+import dogProfile from '../assets/dogprofile.png'; // Ensure the path is correct
 
 function AboutMe() {
   return (
