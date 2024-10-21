@@ -2,12 +2,18 @@ import React from 'react';
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
 import Project from '../components/Project';
 
+// Import images at the top
+import JATEImage from '../assets/JATE.png';
+import SoundSpiralImage from '../assets/Soundspiral.png';
+import CinejournalImage from '../assets/Cinejournal.png';
+import WeatherAppImage from '../assets/weatherapp.png';
+
 function Portfolio() {
   const projects = [
-    { title: 'PWA - Text Editor', image: 'src/assets/JATE.png', repoLink: 'https://github.com/Lijujujune/19_text_editor', deploylink:'https://one9-text-editor-1-30hb.onrender.com/' },
-    { title: 'Sound Spiral', image: 'src/assets/Soundspiral.png', repoLink: 'https://github.com/Lijujujune/socialnetwork', deploylink: 'https://benjr546.github.io/sound-spiral/'  },
-    { title: 'Cinejournal', image: 'src/assets/Cinejournal.png', repoLink: 'https://github.com/kevinvongmany/cinejournal-webapp', deploylink: 'https://cinejournal-webapp.onrender.com/' },
-    { title: 'Weather App', image: 'src/assets/weatherapp.png', repoLink: 'https://github.com/Lijujujune/weatherappLinks', deploylink: 'https://lijujujune.github.io/weatherapp/' },
+    { title: 'PWA - Text Editor', image: JATEImage, repoLink: 'https://github.com/Lijujujune/19_text_editor', deployLink: 'https://one9-text-editor-1-30hb.onrender.com/' },
+    { title: 'Sound Spiral', image: SoundSpiralImage, repoLink: 'https://github.com/Lijujujune/socialnetwork', deployLink: 'https://benjr546.github.io/sound-spiral/' },
+    { title: 'Cinejournal', image: CinejournalImage, repoLink: 'https://github.com/kevinvongmany/cinejournal-webapp', deployLink: 'https://cinejournal-webapp.onrender.com/' },
+    { title: 'Weather App', image: WeatherAppImage, repoLink: 'https://github.com/Lijujujune/weatherappLinks', deployLink: 'https://lijujujune.github.io/weatherapp/' },
   ];
 
   return (
@@ -22,7 +28,7 @@ function Portfolio() {
             title={project.title}
             image={project.image}
             repoLink={project.repoLink}
-            deploylink={project.deploylink}
+            deployLink={project.deployLink} // Corrected the prop name to be consistent
           />
         ))}
       </SimpleGrid>

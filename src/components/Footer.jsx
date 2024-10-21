@@ -34,7 +34,7 @@ const Footer = () => {
         />
         <IconButton
           as="a"
-          href="https://www.facebook.com/"
+          href="https://www.facebook.com/imjunejune"
           aria-label="Facebook"
           icon={<FaFacebook />}
           colorScheme="blue"

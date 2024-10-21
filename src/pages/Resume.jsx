@@ -2,6 +2,9 @@ import React from 'react';
 import { Container, Box, Heading, Text, VStack, Link, List, ListItem, ListIcon } from '@chakra-ui/react';
 import { DownloadIcon, CheckCircleIcon } from '@chakra-ui/icons';
 
+// Import the PDF file
+import resumePDF from '../assets/June Li_CV.pdf';
+
 function Resume() {
   return (
     <Container maxW="container.lg" mt="5rem">
@@ -16,7 +19,7 @@ function Resume() {
         <Box>
           <Text fontSize="lg" color="gray.700">
             Download my {' '}
-            <Link href="src/assets/June Li_CV.pdf" download color="blue.500" fontWeight="bold" isExternal>
+            <Link href={resumePDF} download color="blue.500" fontWeight="bold" isExternal>
               Resume <DownloadIcon mx="2px" />
             </Link>
           </Text>
