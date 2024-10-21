@@ -22,6 +22,8 @@ const Footer = () => {
           colorScheme="blue"
           mx="2"
           isRound
+          target="_blank" // Opens in a new tab
+          rel="noopener noreferrer" // Security improvement
         />
         <IconButton
           as="a"
@@ -31,6 +33,8 @@ const Footer = () => {
           colorScheme="blue"
           mx="3"
           isRound
+          target="_blank" // Opens in a new tab
+          rel="noopener noreferrer" // Security improvement
         />
         <IconButton
           as="a"
@@ -40,6 +44,8 @@ const Footer = () => {
           colorScheme="blue"
           mx="2"
           isRound
+          target="_blank" // Opens in a new tab
+          rel="noopener noreferrer" // Security improvement
         />
       </Flex>
       <Text mt="2" fontSize="sm" textColor="navy" textAlign="center"> 
