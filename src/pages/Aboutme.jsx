@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Box, Image, Text, Heading, VStack } from '@chakra-ui/react';
+import dogProfile from './assets/dogprofile.png'; // Ensure the path is correct
 
 function AboutMe() {
   return (
@@ -12,7 +13,7 @@ function AboutMe() {
         <Image
           borderRadius="full"
           boxSize="200px"
-          src="src/assets/dogprofile.png"
+          src={dogProfile} // Use the imported image here
           alt="Developer's Avatar"
           boxShadow="lg"
         />
@@ -28,8 +29,6 @@ function AboutMe() {
             you'll find me exploring nature or playing with my dog!
           </Text>
         </Box>
-
-        {/* Call-to-Action Button */}
       </VStack>
     </Container>
   );
